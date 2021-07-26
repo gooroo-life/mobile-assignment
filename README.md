@@ -72,8 +72,9 @@ The response will be in json format as well
 ### Requirements
 - Create the project with XCode/Android Studio
 - The code should be written in Objective-C, Swift for iOS and Java, Kotlin for Android
-- For the UI, iOS do not use Storyboards or NIB/XIB, just code; Android doesn't have any limitation.
-- If you have a personal helper, feel free to use it, but don't use any other 3rd party.
+- For the UI, iOS **do not use** Storyboards or NIB/XIB, just code; Android doesn't have any limitation.
+- Due to some kind of limitation, we assume the app/server side can only process up to **5 integers at the same time**; therefore, you need to limit the number of parallel requests.
+- If you have a personal helper, feel free to use it, but **don't use any other 3rd party**.
 - Follow the standard **Git** procedures to branch off the master branch, as well as create a PR when it's ready
 - Maintain the PR in a smaller size (remove unrelated, local, and auto generated files) in order to make it easier to review
 - Git practices, PR readability, architecture + design, concise code, and logic will be taken into consideration
