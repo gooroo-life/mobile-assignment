@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27D7D1BD26CD569800ECDCEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1BC26CD569800ECDCEC /* AppDelegate.swift */; };
+		27D7D1BF26CD569800ECDCEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1BE26CD569800ECDCEC /* SceneDelegate.swift */; };
+		27D7D1C126CD569800ECDCEC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1C026CD569800ECDCEC /* HomeViewController.swift */; };
+		27D7D1C426CD569800ECDCEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D7D1C226CD569800ECDCEC /* Main.storyboard */; };
+		27D7D1C626CD569B00ECDCEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D7D1C526CD569B00ECDCEC /* Assets.xcassets */; };
+		27D7D1C926CD569B00ECDCEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D7D1C726CD569B00ECDCEC /* LaunchScreen.storyboard */; };
+		27D7D20326CD56BF00ECDCEC /* FCBaseNSURLSessionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1D426CD56BE00ECDCEC /* FCBaseNSURLSessionOperation.swift */; };
+		27D7D20426CD56BF00ECDCEC /* FCDownloadTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1D626CD56BE00ECDCEC /* FCDownloadTaskOperation.swift */; };
+		27D7D20526CD56BF00ECDCEC /* FCDataTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1D726CD56BE00ECDCEC /* FCDataTaskOperation.swift */; };
+		27D7D20626CD56BF00ECDCEC /* FCAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1D926CD56BE00ECDCEC /* FCAsyncOperation.swift */; };
+		27D7D20726CD56BF00ECDCEC /* URL + APIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1DB26CD56BE00ECDCEC /* URL + APIExtension.swift */; };
+		27D7D20826CD56BF00ECDCEC /* Encodable + Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1DC26CD56BE00ECDCEC /* Encodable + Extention.swift */; };
+		27D7D20926CD56BF00ECDCEC /* Dictionary + APIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1DD26CD56BE00ECDCEC /* Dictionary + APIExtension.swift */; };
+		27D7D20A26CD56BF00ECDCEC /* ExampleAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1E026CD56BE00ECDCEC /* ExampleAPIManager.swift */; };
+		27D7D20B26CD56BF00ECDCEC /* APIManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1E226CD56BE00ECDCEC /* APIManagerProtocol.swift */; };
+		27D7D20C26CD56BF00ECDCEC /* MultiDomainAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1E326CD56BE00ECDCEC /* MultiDomainAPIManager.swift */; };
+		27D7D20D26CD56BF00ECDCEC /* ExampleMultiDomainWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1E726CD56BE00ECDCEC /* ExampleMultiDomainWeatherModel.swift */; };
+		27D7D20E26CD56BF00ECDCEC /* ExampleWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1E826CD56BE00ECDCEC /* ExampleWeatherInfo.swift */; };
+		27D7D20F26CD56BF00ECDCEC /* ExampleWeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1E926CD56BE00ECDCEC /* ExampleWeatherRequest.swift */; };
+		27D7D21226CD56BF00ECDCEC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1EE26CD56BE00ECDCEC /* Endpoint.swift */; };
+		27D7D21626CD56BF00ECDCEC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1F626CD56BE00ECDCEC /* APIError.swift */; };
+		27D7D21726CD56BF00ECDCEC /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1F726CD56BE00ECDCEC /* ParameterEncoding.swift */; };
+		27D7D21826CD56BF00ECDCEC /* APILogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1F826CD56BE00ECDCEC /* APILogger.swift */; };
+		27D7D21A26CD56BF00ECDCEC /* MultiDomainAPISetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D1FC26CD56BE00ECDCEC /* MultiDomainAPISetting.swift */; };
+		27D7D21C26CD56BF00ECDCEC /* MultiDomainAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D20126CD56BE00ECDCEC /* MultiDomainAPIRouter.swift */; };
+		27D7D21D26CD56BF00ECDCEC /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D20226CD56BE00ECDCEC /* APIRouter.swift */; };
+		27D7D22126CD5A5900ECDCEC /* ChatbotApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D22026CD5A5900ECDCEC /* ChatbotApiManager.swift */; };
+		27D7D22526CD89CF00ECDCEC /* ChatbotProcessEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D22426CD89CF00ECDCEC /* ChatbotProcessEndpoint.swift */; };
+		27D7D22C26CD91A100ECDCEC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D22926CD91A100ECDCEC /* BaseViewController.swift */; };
+		27D7D22D26CD91A100ECDCEC /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D22B26CD91A100ECDCEC /* CombineViewController.swift */; };
+		27D7D23026CD91A500ECDCEC /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D22F26CD91A500ECDCEC /* DependencyManager.swift */; };
+		27D7D23426CD91E700ECDCEC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D23326CD91E700ECDCEC /* Reachability.swift */; };
+		27D7D23726CD923E00ECDCEC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D23626CD923E00ECDCEC /* HomeViewModel.swift */; };
+		27D7D23926CDF8BA00ECDCEC /* ChatbotCombineEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D23826CDF8BA00ECDCEC /* ChatbotCombineEndpoint.swift */; };
+		27D7D23D26CEA62700ECDCEC /* FCToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D23B26CEA62700ECDCEC /* FCToastView.swift */; };
+		27D7D23E26CEA62700ECDCEC /* FCToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D7D23C26CEA62700ECDCEC /* FCToastView.xib */; };
+		27D7D26826CEA6B800ECDCEC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7D24F26CEA6B800ECDCEC /* String+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27D7D1B926CD569800ECDCEC /* Gooroo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gooroo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D7D1BC26CD569800ECDCEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27D7D1BE26CD569800ECDCEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		27D7D1C026CD569800ECDCEC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		27D7D1C326CD569800ECDCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27D7D1C526CD569B00ECDCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27D7D1C826CD569B00ECDCEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27D7D1CA26CD569B00ECDCEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27D7D1D426CD56BE00ECDCEC /* FCBaseNSURLSessionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCBaseNSURLSessionOperation.swift; sourceTree = "<group>"; };
+		27D7D1D626CD56BE00ECDCEC /* FCDownloadTaskOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCDownloadTaskOperation.swift; sourceTree = "<group>"; };
+		27D7D1D726CD56BE00ECDCEC /* FCDataTaskOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCDataTaskOperation.swift; sourceTree = "<group>"; };
+		27D7D1D926CD56BE00ECDCEC /* FCAsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCAsyncOperation.swift; sourceTree = "<group>"; };
+		27D7D1DB26CD56BE00ECDCEC /* URL + APIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL + APIExtension.swift"; sourceTree = "<group>"; };
+		27D7D1DC26CD56BE00ECDCEC /* Encodable + Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable + Extention.swift"; sourceTree = "<group>"; };
+		27D7D1DD26CD56BE00ECDCEC /* Dictionary + APIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary + APIExtension.swift"; sourceTree = "<group>"; };
+		27D7D1E026CD56BE00ECDCEC /* ExampleAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAPIManager.swift; sourceTree = "<group>"; };
+		27D7D1E226CD56BE00ECDCEC /* APIManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManagerProtocol.swift; sourceTree = "<group>"; };
+		27D7D1E326CD56BE00ECDCEC /* MultiDomainAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiDomainAPIManager.swift; sourceTree = "<group>"; };
+		27D7D1E726CD56BE00ECDCEC /* ExampleMultiDomainWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleMultiDomainWeatherModel.swift; sourceTree = "<group>"; };
+		27D7D1E826CD56BE00ECDCEC /* ExampleWeatherInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleWeatherInfo.swift; sourceTree = "<group>"; };
+		27D7D1E926CD56BE00ECDCEC /* ExampleWeatherRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleWeatherRequest.swift; sourceTree = "<group>"; };
+		27D7D1EE26CD56BE00ECDCEC /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		27D7D1F626CD56BE00ECDCEC /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		27D7D1F726CD56BE00ECDCEC /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		27D7D1F826CD56BE00ECDCEC /* APILogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogger.swift; sourceTree = "<group>"; };
+		27D7D1FC26CD56BE00ECDCEC /* MultiDomainAPISetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiDomainAPISetting.swift; sourceTree = "<group>"; };
+		27D7D20126CD56BE00ECDCEC /* MultiDomainAPIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiDomainAPIRouter.swift; sourceTree = "<group>"; };
+		27D7D20226CD56BE00ECDCEC /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		27D7D22026CD5A5900ECDCEC /* ChatbotApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotApiManager.swift; sourceTree = "<group>"; };
+		27D7D22426CD89CF00ECDCEC /* ChatbotProcessEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotProcessEndpoint.swift; sourceTree = "<group>"; };
+		27D7D22926CD91A100ECDCEC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		27D7D22B26CD91A100ECDCEC /* CombineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
+		27D7D22F26CD91A500ECDCEC /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		27D7D23326CD91E700ECDCEC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		27D7D23626CD923E00ECDCEC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		27D7D23826CDF8BA00ECDCEC /* ChatbotCombineEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotCombineEndpoint.swift; sourceTree = "<group>"; };
+		27D7D23B26CEA62700ECDCEC /* FCToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FCToastView.swift; sourceTree = "<group>"; };
+		27D7D23C26CEA62700ECDCEC /* FCToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCToastView.xib; sourceTree = "<group>"; };
+		27D7D24F26CEA6B800ECDCEC /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27D7D1B626CD569800ECDCEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27D7D1B026CD569800ECDCEC = {
+			isa = PBXGroup;
+			children = (
+				27D7D1D026CD56A800ECDCEC /* ReusableFramework */,
+				27D7D1BB26CD569800ECDCEC /* Gooroo */,
+				27D7D1BA26CD569800ECDCEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27D7D1BA26CD569800ECDCEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1B926CD569800ECDCEC /* Gooroo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27D7D1BB26CD569800ECDCEC /* Gooroo */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D21E26CD5A2700ECDCEC /* Class */,
+				27D7D1C226CD569800ECDCEC /* Main.storyboard */,
+				27D7D1C526CD569B00ECDCEC /* Assets.xcassets */,
+				27D7D1CA26CD569B00ECDCEC /* Info.plist */,
+			);
+			path = Gooroo;
+			sourceTree = "<group>";
+		};
+		27D7D1D026CD56A800ECDCEC /* ReusableFramework */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D23F26CEA6B800ECDCEC /* FCExtensions */,
+				27D7D23A26CEA62700ECDCEC /* FCToasts */,
+				27D7D23126CD91C300ECDCEC /* Network */,
+				27D7D22E26CD91A500ECDCEC /* DependencyInjection */,
+				27D7D22826CD91A100ECDCEC /* ViewController */,
+			);
+			path = ReusableFramework;
+			sourceTree = "<group>";
+		};
+		27D7D1D126CD56BE00ECDCEC /* APIRouter */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1DA26CD56BE00ECDCEC /* Extension */,
+				27D7D1D226CD56BE00ECDCEC /* Operation */,
+				27D7D1EC26CD56BE00ECDCEC /* Protocol */,
+				27D7D1F526CD56BE00ECDCEC /* Service */,
+				27D7D1FD26CD56BE00ECDCEC /* Router */,
+				27D7D1DE26CD56BE00ECDCEC /* Example */,
+			);
+			path = APIRouter;
+			sourceTree = "<group>";
+		};
+		27D7D1D226CD56BE00ECDCEC /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1D326CD56BE00ECDCEC /* BaseNSURLSessionOperation */,
+				27D7D1D526CD56BE00ECDCEC /* Operations */,
+				27D7D1D826CD56BE00ECDCEC /* AsyncOperation */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		27D7D1D326CD56BE00ECDCEC /* BaseNSURLSessionOperation */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1D426CD56BE00ECDCEC /* FCBaseNSURLSessionOperation.swift */,
+			);
+			path = BaseNSURLSessionOperation;
+			sourceTree = "<group>";
+		};
+		27D7D1D526CD56BE00ECDCEC /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1D626CD56BE00ECDCEC /* FCDownloadTaskOperation.swift */,
+				27D7D1D726CD56BE00ECDCEC /* FCDataTaskOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		27D7D1D826CD56BE00ECDCEC /* AsyncOperation */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1D926CD56BE00ECDCEC /* FCAsyncOperation.swift */,
+			);
+			path = AsyncOperation;
+			sourceTree = "<group>";
+		};
+		27D7D1DA26CD56BE00ECDCEC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1DB26CD56BE00ECDCEC /* URL + APIExtension.swift */,
+				27D7D1DC26CD56BE00ECDCEC /* Encodable + Extention.swift */,
+				27D7D1DD26CD56BE00ECDCEC /* Dictionary + APIExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		27D7D1DE26CD56BE00ECDCEC /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1F926CD56BE00ECDCEC /* Setting */,
+				27D7D22726CD90AB00ECDCEC /* APIManager */,
+				27D7D1E426CD56BE00ECDCEC /* Endpoint */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		27D7D1E426CD56BE00ECDCEC /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1E726CD56BE00ECDCEC /* ExampleMultiDomainWeatherModel.swift */,
+				27D7D1E826CD56BE00ECDCEC /* ExampleWeatherInfo.swift */,
+				27D7D1E926CD56BE00ECDCEC /* ExampleWeatherRequest.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		27D7D1EC26CD56BE00ECDCEC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1E226CD56BE00ECDCEC /* APIManagerProtocol.swift */,
+				27D7D1EE26CD56BE00ECDCEC /* Endpoint.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		27D7D1F526CD56BE00ECDCEC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1F626CD56BE00ECDCEC /* APIError.swift */,
+				27D7D1F726CD56BE00ECDCEC /* ParameterEncoding.swift */,
+				27D7D1F826CD56BE00ECDCEC /* APILogger.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		27D7D1F926CD56BE00ECDCEC /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1FC26CD56BE00ECDCEC /* MultiDomainAPISetting.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		27D7D1FD26CD56BE00ECDCEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D20126CD56BE00ECDCEC /* MultiDomainAPIRouter.swift */,
+				27D7D20226CD56BE00ECDCEC /* APIRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		27D7D21E26CD5A2700ECDCEC /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D23526CD91FB00ECDCEC /* Application */,
+				27D7D22226CD893000ECDCEC /* ViewController */,
+				27D7D21F26CD5A2D00ECDCEC /* APIManager */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		27D7D21F26CD5A2D00ECDCEC /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D22326CD894A00ECDCEC /* Endpoint */,
+				27D7D22026CD5A5900ECDCEC /* ChatbotApiManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		27D7D22226CD893000ECDCEC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1C026CD569800ECDCEC /* HomeViewController.swift */,
+				27D7D23626CD923E00ECDCEC /* HomeViewModel.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		27D7D22326CD894A00ECDCEC /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D22426CD89CF00ECDCEC /* ChatbotProcessEndpoint.swift */,
+				27D7D23826CDF8BA00ECDCEC /* ChatbotCombineEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		27D7D22726CD90AB00ECDCEC /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1E326CD56BE00ECDCEC /* MultiDomainAPIManager.swift */,
+				27D7D1E026CD56BE00ECDCEC /* ExampleAPIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		27D7D22826CD91A100ECDCEC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D22926CD91A100ECDCEC /* BaseViewController.swift */,
+				27D7D22A26CD91A100ECDCEC /* Protocol */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		27D7D22A26CD91A100ECDCEC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D22B26CD91A100ECDCEC /* CombineViewController.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		27D7D22E26CD91A500ECDCEC /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D22F26CD91A500ECDCEC /* DependencyManager.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		27D7D23126CD91C300ECDCEC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D23226CD91E700ECDCEC /* Reachability */,
+				27D7D1D126CD56BE00ECDCEC /* APIRouter */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		27D7D23226CD91E700ECDCEC /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D23326CD91E700ECDCEC /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		27D7D23526CD91FB00ECDCEC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D1C726CD569B00ECDCEC /* LaunchScreen.storyboard */,
+				27D7D1BC26CD569800ECDCEC /* AppDelegate.swift */,
+				27D7D1BE26CD569800ECDCEC /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		27D7D23A26CEA62700ECDCEC /* FCToasts */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D23B26CEA62700ECDCEC /* FCToastView.swift */,
+				27D7D23C26CEA62700ECDCEC /* FCToastView.xib */,
+			);
+			path = FCToasts;
+			sourceTree = "<group>";
+		};
+		27D7D23F26CEA6B800ECDCEC /* FCExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				27D7D24F26CEA6B800ECDCEC /* String+Extension.swift */,
+			);
+			path = FCExtensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27D7D1B826CD569800ECDCEC /* Gooroo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D7D1CD26CD569B00ECDCEC /* Build configuration list for PBXNativeTarget "Gooroo" */;
+			buildPhases = (
+				27D7D1B526CD569800ECDCEC /* Sources */,
+				27D7D1B626CD569800ECDCEC /* Frameworks */,
+				27D7D1B726CD569800ECDCEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gooroo;
+			productName = Gooroo;
+			productReference = 27D7D1B926CD569800ECDCEC /* Gooroo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27D7D1B126CD569800ECDCEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					27D7D1B826CD569800ECDCEC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 27D7D1B426CD569800ECDCEC /* Build configuration list for PBXProject "Gooroo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27D7D1B026CD569800ECDCEC;
+			productRefGroup = 27D7D1BA26CD569800ECDCEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27D7D1B826CD569800ECDCEC /* Gooroo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27D7D1B726CD569800ECDCEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D7D1C926CD569B00ECDCEC /* LaunchScreen.storyboard in Resources */,
+				27D7D1C626CD569B00ECDCEC /* Assets.xcassets in Resources */,
+				27D7D1C426CD569800ECDCEC /* Main.storyboard in Resources */,
+				27D7D23E26CEA62700ECDCEC /* FCToastView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27D7D1B526CD569800ECDCEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D7D20726CD56BF00ECDCEC /* URL + APIExtension.swift in Sources */,
+				27D7D21D26CD56BF00ECDCEC /* APIRouter.swift in Sources */,
+				27D7D1C126CD569800ECDCEC /* HomeViewController.swift in Sources */,
+				27D7D1BD26CD569800ECDCEC /* AppDelegate.swift in Sources */,
+				27D7D20D26CD56BF00ECDCEC /* ExampleMultiDomainWeatherModel.swift in Sources */,
+				27D7D20426CD56BF00ECDCEC /* FCDownloadTaskOperation.swift in Sources */,
+				27D7D1BF26CD569800ECDCEC /* SceneDelegate.swift in Sources */,
+				27D7D23426CD91E700ECDCEC /* Reachability.swift in Sources */,
+				27D7D22D26CD91A100ECDCEC /* CombineViewController.swift in Sources */,
+				27D7D20326CD56BF00ECDCEC /* FCBaseNSURLSessionOperation.swift in Sources */,
+				27D7D21826CD56BF00ECDCEC /* APILogger.swift in Sources */,
+				27D7D22126CD5A5900ECDCEC /* ChatbotApiManager.swift in Sources */,
+				27D7D20C26CD56BF00ECDCEC /* MultiDomainAPIManager.swift in Sources */,
+				27D7D26826CEA6B800ECDCEC /* String+Extension.swift in Sources */,
+				27D7D23726CD923E00ECDCEC /* HomeViewModel.swift in Sources */,
+				27D7D21C26CD56BF00ECDCEC /* MultiDomainAPIRouter.swift in Sources */,
+				27D7D21626CD56BF00ECDCEC /* APIError.swift in Sources */,
+				27D7D22C26CD91A100ECDCEC /* BaseViewController.swift in Sources */,
+				27D7D21A26CD56BF00ECDCEC /* MultiDomainAPISetting.swift in Sources */,
+				27D7D20526CD56BF00ECDCEC /* FCDataTaskOperation.swift in Sources */,
+				27D7D21226CD56BF00ECDCEC /* Endpoint.swift in Sources */,
+				27D7D20826CD56BF00ECDCEC /* Encodable + Extention.swift in Sources */,
+				27D7D20926CD56BF00ECDCEC /* Dictionary + APIExtension.swift in Sources */,
+				27D7D23026CD91A500ECDCEC /* DependencyManager.swift in Sources */,
+				27D7D20F26CD56BF00ECDCEC /* ExampleWeatherRequest.swift in Sources */,
+				27D7D21726CD56BF00ECDCEC /* ParameterEncoding.swift in Sources */,
+				27D7D22526CD89CF00ECDCEC /* ChatbotProcessEndpoint.swift in Sources */,
+				27D7D20A26CD56BF00ECDCEC /* ExampleAPIManager.swift in Sources */,
+				27D7D23D26CEA62700ECDCEC /* FCToastView.swift in Sources */,
+				27D7D20E26CD56BF00ECDCEC /* ExampleWeatherInfo.swift in Sources */,
+				27D7D20B26CD56BF00ECDCEC /* APIManagerProtocol.swift in Sources */,
+				27D7D23926CDF8BA00ECDCEC /* ChatbotCombineEndpoint.swift in Sources */,
+				27D7D20626CD56BF00ECDCEC /* FCAsyncOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27D7D1C226CD569800ECDCEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D7D1C326CD569800ECDCEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27D7D1C726CD569B00ECDCEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D7D1C826CD569B00ECDCEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27D7D1CB26CD569B00ECDCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27D7D1CC26CD569B00ECDCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27D7D1CE26CD569B00ECDCEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD2LB8H35R;
+				INFOPLIST_FILE = Gooroo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Chen.Gooroo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27D7D1CF26CD569B00ECDCEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AD2LB8H35R;
+				INFOPLIST_FILE = Gooroo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Chen.Gooroo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27D7D1B426CD569800ECDCEC /* Build configuration list for PBXProject "Gooroo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D7D1CB26CD569B00ECDCEC /* Debug */,
+				27D7D1CC26CD569B00ECDCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D7D1CD26CD569B00ECDCEC /* Build configuration list for PBXNativeTarget "Gooroo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D7D1CE26CD569B00ECDCEC /* Debug */,
+				27D7D1CF26CD569B00ECDCEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27D7D1B126CD569800ECDCEC /* Project object */;
+}
